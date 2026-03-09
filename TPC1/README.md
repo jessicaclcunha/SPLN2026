@@ -3,7 +3,9 @@
 
 ### Autor
 **ID:** PG60267
+
 **Nome:** Jéssica Cristina Lima da Cunha
+
 <img src="../imgs/autor.jpg" width="150">
 
 ## Resumo

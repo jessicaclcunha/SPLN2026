@@ -17,4 +17,11 @@
 
 ---
 
+### TPC2 • Scraper de Doenças (Atlas da Saúde)
+> Este trabalho teve como objetivo a extração e estruturação de dados sobre doenças a partir do portal **Atlas da Saúde** (secção "Doenças de A a Z"), produzindo um dicionário médico digital em formato **JSON**.
+
+**[Ver trabalho →](./TPC2)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Scripting no Processamento de Linguagem Natural (SPLN) 2025/2026*

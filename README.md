@@ -24,4 +24,11 @@
 
 ---
 
+### TPC3 • Extração de Personagens e Relações (Harry Potter)
+> Este trabalho teve como objetivo a extração de personagens e relações de amizade a partir do texto do livro **Harry Potter e a Pedra Filosofal**, utilizando processamento de linguagem natural com a biblioteca **spaCy**.
+
+**[Ver trabalho →](./TPC3)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Scripting no Processamento de Linguagem Natural (SPLN) 2025/2026*

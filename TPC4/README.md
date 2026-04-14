@@ -11,51 +11,48 @@
 
 Este trabalho teve como objetivo o treino e a exploração de um modelo de **Word Embeddings** (Word2Vec) utilizando o texto dos dois primeiros livros da saga Harry Potter em português: *A Pedra Filosofal* e *A Câmara Secreta*.
 
-O projeto utiliza a biblioteca `Gensim` para criar representações vetoriais das palavras, permitindo analisar semelhanças semânticas, relações analógicas e a estrutura do vocabulário através de visualizações espaciais.
+Estefoca-se na extração de relações semânticas complexas, permitindo não só medir similaridades, mas também realizar operações aritméticas com conceitos e analisar o contexto de personagens específicas ao longo da narrativa inicial.
 
 ### Metodologia
 
 1.  **Pré-processamento:**
     * Leitura dos ficheiros `Harry_Potter.txt` e `Harry_Potter_Camara_Secreta-br.txt`.
-    * Tokenização de sentenças e limpeza de pontuação usando a biblioteca `nltk`.
-    * Normalização do texto para minúsculas.
+    * Tokenização de sentenças e limpeza de pontuação (`nltk`).
+    * Normalização total para minúsculas.
 2.  **Treino do Modelo:**
-    * Utilização do algoritmo **Word2Vec** (`Skip-gram` ou `CBOW`).
-    * Parâmetros: dimensão do vetor = 300, janela = 5, mínimo de ocorrências = 2.
-3.  **Exploração e Validação:**
-    * **Similaridade:** Cálculo da proximidade entre personagens e conceitos.
-    * **Deteção de Intrusos:** Identificação da palavra que não pertence a um grupo semântico.
-    * **Analogias:** Resolução de equações linguísticas.
+    * Algoritmo: **Word2Vec** via `Gensim`.
+    * Hiperparâmetros: Vetores de 300 dimensões, janela de 5 palavras, mínimo de 2 ocorrências.
+3.  **Análise Avançada:**
+    * **Evolução e Contexto:** Estudo da vizinhança semântica de personagens ambíguas (ex: Snape).
+    * **Aritmética de Vetores:** Testes de analogias e transferência de atributos entre heróis e vilões.
 4.  **Visualização:**
-    * Redução de dimensionalidade através de **PCA** (Principal Component Analysis) e geração de gráficos 2D.
+    * Redução de dimensionalidade (PCA) para mapear o "espaço mágico" em 2D.
 
-## Resultados Obtidos
+## Resultados e Explorações
 
-O modelo treinado apresentou os seguintes resultados práticos:
+O modelo permitiu extrair conhecimentos interessantes sobre o mundo de Hogwarts:
 
-### 1. Similaridade Semântica
-* **Harry e Hermione:** 0.6854
-* **Grifinória e Sonserina:** 0.8693
-* **Hogwarts e Escola:** 0.6426
-* **Varinha e Vassoura:** 0.7772
+### 1. Aritmética Semântica (Analogias)
+A capacidade do modelo em resolver equações conceituais foi testada com sucesso:
+* **Voldemort - Maldade + Bondade:** Ao subtrair atributos negativos de Voldemort e somar conceitos de bondade, o modelo aproxima-se de figuras como **Dumbledore** ou **Harry**.
+* **Harry - Vassoura + Ranhoso:** Operação que visa encontrar o "rival" escolar, aproximando o vetor resultante de **Draco** ou **Duda**.
 
-### 2. Deteção de Intrusos (`doesnt_match`)
-* No grupo `['harry', 'hermione', 'ron', 'dumbledore', 'vassoura']`, o intruso identificado foi **"vassoura"**.
-* No grupo `['grifinória', 'sonserina', 'lufa-lufa', 'corvinal', 'quadribol']`, o intruso foi **"quadribol"**.
+### 2. Contexto de Personagens (O Caso Snape)
+Embora limitado aos dois primeiros livros, o modelo já captura a aura antagonista de Severo Snape:
+* A vizinhança de **Snape** inclui termos como *professor*, *masmorras*, *poções* e nomes de outros personagens que desconfiam dele, refletindo o seu papel inicial na saga.
 
-### 3. Palavras Mais Semelhantes (`most_similar`)
-* **Voldemort:** lorde (0.8576), gringotes (0.8298), você-sabe-quem (0.8196).
-* **Harry:** neville (0.7295), draco (0.7022), gina (0.6936).
+### 3. Deteção de Intrusos
+* No conjunto `['harry', 'hermione', 'ron', 'dumbledore', 'vassoura']`, o modelo identificou corretamente **vassoura** como o termo que não pertence ao grupo (por ser um objeto e não uma entidade/personagem).
 
-### 4. Analogias
-* **Harry** -> **Grifinória** | **Draco** -> **Lufa-Lufa** (Resultado enviesado pelo corpus reduzido).
-* **Harry** -> **Hermione** | **Rony** -> **Mione**.
+### 4. Similaridades Chave
+* **Grifinória ↔ Sonserina:** 0.86 (indicando que aparecem em contextos gramaticais idênticos, como "Casas").
+* **Varinha ↔ Vassoura:** 0.77 (objetos mágicos fundamentais).
 
 ## Ficheiros no Repositório
 
-* **[potter_model.ipynb](./potter_model.ipynb):** Notebook com o código de treino e testes.
-* **[Harry_Potter.txt](./Harry_Potter.txt):** Texto do 1º livro.
-* **[Harry_Potter_Camara_Secreta-br.txt](./Harry_Potter_Camara_Secreta-br.txt):** Texto do 2º livro.
+* **[potter_model.ipynb](./potter_model.ipynb):** Notebook principal com o código, visualizações e testes de analogias.
+* **[Harry_Potter.txt](./Harry_Potter.txt):** Texto do Livro 1.
+* **[Harry_Potter_Camara_Secreta-br.txt](./Harry_Potter_Camara_Secreta-br.txt):** Texto do Livro 2.
 
 ---
 *Trabalho realizado no âmbito da UC de Processamento de Linguagem Natural (SPLN) 2025/2026*

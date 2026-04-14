@@ -31,4 +31,11 @@
 
 ---
 
+### TPC4 • Word Embeddings no Universo de Harry Potter
+> Este trabalho teve como objetivo o treino e a exploração de um modelo de **Word Embeddings** (Word2Vec) utilizando o texto dos dois primeiros livros da saga Harry Potter em português: *A Pedra Filosofal* e *A Câmara Secreta*.
+
+**[Ver trabalho →](./TPC3)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Scripting no Processamento de Linguagem Natural (SPLN) 2025/2026*

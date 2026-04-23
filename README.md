@@ -34,7 +34,14 @@
 ### TPC4 • Word Embeddings no Universo de Harry Potter
 > Este trabalho teve como objetivo o treino e a exploração de um modelo de **Word Embeddings** (Word2Vec) utilizando o texto dos dois primeiros livros da saga Harry Potter em português: *A Pedra Filosofal* e *A Câmara Secreta*.
 
-**[Ver trabalho →](./TPC3)**
+**[Ver trabalho →](./TPC4)**
+
+---
+
+### TPC5 • Treino e Comparação de Modelos NER (spaCy vs. BERT)
+>Este trabalho teve como objetivo o treino de um modelo de **Reconhecimento de Entidades Mencionadas (NER)** utilizando a biblioteca **spaCy**, comparando a sua performance com o modelo **BERT** (Neuralmind) explorado nas aulas. O dataset utilizado foi o `lfcc/portuguese_ner` do HuggingFace, focado em entidades em língua portuguesa.
+
+**[Ver trabalho →](./TPC5)**
 
 ---
 

@@ -45,4 +45,11 @@
 
 ---
 
+### TPC6 • TF-IDF e Information Retrieval
+>Este trabalho teve como objetivo a implementação de um sistema de **Recuperação de Informação (IR)** baseado na métrica **TF-IDF** (*Term Frequency – Inverse Document Frequency*), aplicada a um corpus de documentos em língua inglesa.
+
+**[Ver trabalho →](./TPC6)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Scripting no Processamento de Linguagem Natural (SPLN) 2025/2026*
